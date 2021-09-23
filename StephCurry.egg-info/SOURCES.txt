@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+StephCurry/__init__.py
+StephCurry/basketball.py
+StephCurry.egg-info/PKG-INFO
+StephCurry.egg-info/SOURCES.txt
+StephCurry.egg-info/dependency_links.txt
+StephCurry.egg-info/requires.txt
+StephCurry.egg-info/top_level.txt

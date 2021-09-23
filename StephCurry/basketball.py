@@ -1,5 +1,4 @@
 import numpy as np
-from numpy.core.numerictypes import find_common_type
 import scipy as sc
 
 class ball:

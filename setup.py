@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 setup(
     name='StephCurry',
     packages=find_packages(),
-    version='l.0',
+    version='1.0',
     description='Basketball trajectory model',
     author='Morris',
     license='MIT',
