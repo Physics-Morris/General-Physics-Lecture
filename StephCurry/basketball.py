@@ -29,13 +29,15 @@ class ball:
         return result, min_distance
 
     def trajectory(self, rim_x, rim_y, rim_r, g, drag_coefficient, air_density, dt):
-        traj = [[self.x], [self.y]]
+        traj = [[self.x], [self.y], [self.vx], [self.vy]]
         while True:
             old_dis = self.distance_to_rim(rim_x, rim_y) 
             self = self.euler(dt, g, drag_coefficient, air_density)
             new_dis = self.distance_to_rim(rim_x, rim_y)
             traj[0].append(self.x)
             traj[1].append(self.y)
+            traj[2].append(self.vx)
+            traj[3].append(self.vy)
             if (new_dis > old_dis): break
             if self.distance_to_rim(rim_x, rim_y) < rim_r-self.r: break
         return np.array(traj)
